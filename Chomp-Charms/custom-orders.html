@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Orders - Chomp Charms by Demi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Custom Orders</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="shop.html">Shop</a>
+      <a href="custom-orders.html">Custom Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="custom-orders">
+      <h2>Request a Custom Pair</h2>
+      <p>Fill out the form below to request a unique set of earrings made just for you!</p>
+
+      <form action="https://formspree.io/f/mypzegdo" method="POST" enctype="multipart/form-data">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="style">Preferred Style</label>
+        <input type="text" id="style" name="style" placeholder="e.g., Studs, Dangles, Clip-ons">
+
+        <label for="colors">Color Preferences</label>
+        <input type="text" id="colors" name="colors" placeholder="e.g., Pink and Gold">
+
+        <label for="reference">Upload a Reference Photo (optional)</label>
+        <input type="file" id="reference" name="reference">
+
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us what you envision!"></textarea>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chomp Charms by Demi</p>
+  </footer>
+</body>
+</html>
+
